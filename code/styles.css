@@ -1,0 +1,187 @@
+/* Reset default margins and paddings */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Modified Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
+    background-color: #0044cc;
+    color: white;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px;
+}
+
+.navbar .cta {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* Doctor carousel */
+.doctor-carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.doctor-carousel img {
+    width: 250px;
+    height: auto;
+    margin-right: 10px;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Hero section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero .welcome-message h1 {
+    margin: 0;
+    color: #0044cc;
+}
+
+/* Info section */
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.info-text h2 {
+    margin-bottom: 10px;
+}
+
+/* Unique Experience section */
+.unique-experience {
+    padding: 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+/* Services section */
+.services {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services .service {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.services .service:hover {
+    transform: translateY(-5px);
+}
+
+.services .service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.services .service h2 {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.services .service p {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar .cta {
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .doctor-carousel img {
+        width: 200px;
+    }
+
+    .services .service {
+        flex: 1 1 100%;
+    }
+}

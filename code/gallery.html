@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 20px;
+            background-color: #0044cc;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar .cta {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            .cta {
+                margin-top: 10px;
+            }
+        }
+
+        .gallery {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            width: 100%;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 20px);
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-10px);
+        }
+
+        .footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery img {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="cropped-diagnostic-lab-logo.png" alt="Logo de l'hôpital"></a>
+        <div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Galerie</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta">Prendre un rendez-vous</a>
+    </div>
+
+    <div class="gallery">
+        <h1>Nos Locaux</h1>
+        <img src="IMG-20230806-WA0017-1024x449.jpg" alt="Local 1">
+        <img src="IMG-20230806-WA0018-449x1024.jpg" alt="Local 2">
+        <img src="IMG-20230806-WA0019-449x1024.jpg" alt="Local 3">
+        <img src="IMG-20230806-WA0020-449x1024.jpg" alt="Local 4">
+        <img src="IMG-20230806-WA0021-449x1024.jpg" alt="Local 5">
+        <img src="IMG-20230806-WA0022-449x1024.jpg" alt="Local 6">
+        <img src="IMG-20230806-WA0023-449x1024.jpg" alt="Local 7">
+        <img src="IMG-20230806-WA0024-449x1024.jpg" alt="Local 8">
+        <img src="IMG-20230806-WA0025-449x1024.jpg" alt="Local 9">
+        <img src="IMG-20230806-WA0026-1024x449.jpg" alt="Local 10">
+        <img src="IMG-20230806-WA0027-1024x449.jpg" alt="Local 11">
+        <img src="IMG-20230806-WA0028-1024x449.jpg" alt="Local 12">
+        <img src="IMG-20230806-WA0029-1024x449.jpg" alt="Local 13">
+        <img src="IMG-20230806-WA0030-449x1024.jpg" alt="Local 14">
+        <img src="IMG-20230806-WA0031-1024x449.jpg" alt="Local 15">
+        <img src="IMG-20230806-WA0033-1024x449.jpg" alt="Local 16">
+        <img src="IMG-20230806-WA0033-1024x449.jpg" alt="Local 17">
+        <img src="IMG-20230806-WA0035-449x1024.jpg" alt="Local 18">
+        <img src="IMG-20230806-WA0035-449x1024.jpg" alt="Local 19">
+        <img src="IMG-20230806-WA0037-449x1024.jpg" alt="Local 20">
+        <img src="IMG-20230806-WA0036-449x1024a.jpg" alt="Local 21">
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Centre Médico-Social La Grâce & Vie
+    </div>
+</body>
+
+</html>

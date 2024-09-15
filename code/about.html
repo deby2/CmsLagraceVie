@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0044cc;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar .cta {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .navbar a {
+                margin: 0;
+                padding: 7px 0;
+            }
+
+            .cta {
+                margin-top: 10px;
+                align-items: center;
+            }
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .team-member {
+            flex: 1 1 calc(25% - 20px);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member i {
+            margin-right: 10px;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .team-member h4 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 1200px) {
+            .team-member {
+                flex: 1 1 calc(33.333% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="cropped-diagnostic-lab-logo.png" alt="Logo de l'hôpital"></a>
+        <div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Galerie</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta">Prendre un rendez-vous</a>
+    </div>
+
+    <div class="main-content">
+        <div class="about-content">
+            <h1>À propos du Centre Médico-Social La Grâce & Vie</h1>
+            <p>Nous croyons que c’est grâce à notre équipe de professionnels qualifiés que nous sommes en mesure de
+                répondre à vos besoins de santé de manière complète et efficace. Vous pouvez avoir confiance en notre
+                expertise et en notre engagement à vous offrir les meilleurs soins possibles pour que vous puissiez
+                vivre une vie saine et épanouie.</p>
+
+            <h2 class="section-title">Nos spécialités :</h2>
+            <p><strong>Médecine générale :</strong> Notre équipe de médecins généralistes chevronnés est là pour
+                répondre à toutes vos préoccupations médicales, vous offrant des soins attentifs et complets pour vous
+                et votre famille.</p>
+            <p><strong>Maternité :</strong> Accompagner votre grossesse est un honneur pour nous. Notre équipe de
+                professionnels compétents veillera sur vous et votre bébé tout au long de cette période spéciale de
+                votre vie.</p>
+            <p><strong>Échographie :</strong> Grâce à notre équipement de pointe, nous réalisons des échographies de
+                haute qualité pour un diagnostic précis et une surveillance attentive de votre santé.</p>
+            <p><strong>Gynécologie :</strong> Nos gynécologues experts comprennent les besoins uniques des femmes et
+                proposent des soins adaptés à chaque étape de leur vie.</p>
+            <p><strong>Cardiologie :</strong> Votre cœur est entre de bonnes mains avec nos spécialistes en cardiologie,
+                qui vous offrent des services de pointe pour la santé de votre cœur.</p>
+            <p><strong>Kinésithérapie :</strong> Notre équipe de kinésithérapeutes expérimentés vous accompagnera dans
+                votre rétablissement physique, en vous proposant des soins personnalisés pour retrouver mobilité et
+                confort.</p>
+            <p><strong>Laboratoire d'analyse :</strong> Grâce à notre laboratoire équipé des dernières technologies,
+                nous assurons des analyses précises et rapides pour faciliter les diagnostics et les traitements.</p>
+
+            <h2 class="section-title">Notre équipe :</h2>
+            <div class="team">
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>EDOUWODJI Patrice - Généraliste</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-nurse"></i>
+                    <h4>AMEZIAN Amavi - Infirmier Major</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>ASSAMALA Mawara - Généraliste</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-nurse"></i>
+                    <h4>AMEZIAN A. Akpedje - Sage-femme d’état</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>AZIAGBE Atsu Koffi - Pneumologue</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>GUINHOUYA Kokou - Neurologue</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>DJAKPA Akouété - Kiné d’Etat</h4>
+                </div>
+                <div class="team-member">
+                    <i class="fas fa-user-md"></i>
+                    <h4>AKATI Ata Mawuli - Technicien Supérieur de Labo</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Centre Médico-Social La Grâce & Vie. Tous droits réservés.</p>
+
+    </div>
+</body>
+
+</html>

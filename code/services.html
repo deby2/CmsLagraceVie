@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 20px;
+            background-color: #0044cc;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar .cta {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            .cta {
+                margin-top: 10px;
+            }
+        }
+
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Styles pour les services */
+        .service {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service h2 {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .service p {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="cropped-diagnostic-lab-logo.png" alt="Logo de l'hôpital"></a>
+        <div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Galerie</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta">Prendre un rendez-vous</a>
+    </div>
+
+    <div class="main-content">
+        <div class="service">
+            <img src="istockphoto-10612.jpg" alt="Médecine Générale">
+            <h2>Médecine générale</h2>
+            <p>Notre équipe de médecins généralistes chevronnés est là pour répondre à toutes vos préoccupations
+                médicales, vous offrant des soins attentifs et complets pour vous et votre famille.</p>
+        </div>
+        <div class="service">
+            <img src="istockphoto-mater.jpg" alt="Maternité">
+            <h2>Maternité</h2>
+            <p>Accompagner votre grossesse est un honneur pour nous. Notre équipe de professionnels compétents veillera
+                sur vous et votre bébé tout au long de cette période spéciale de votre vie.</p>
+        </div>
+        <div class="service">
+            <img src="istockphoto-4512.jpg" alt="Échographie">
+            <h2>Échographie</h2>
+            <p>Grâce à notre équipement de pointe, nous réalisons des échographies de haute qualité pour un diagnostic
+                précis et une surveillance attentive de votre santé.</p>
+        </div>
+        <div class="service">
+            <img src="istockphoto-gyné.jpg" alt="Gynécologie">
+            <h2>Gynécologie</h2>
+            <p>Nos gynécologues experts comprennent les besoins uniques des femmes et proposent des soins adaptés à
+                chaque étape de leur vie.</p>
+        </div>
+        <div class="service">
+            <img src="istockphoto-1Cardio.jpg" alt="Cardiologie">
+            <h2>Cardiologie</h2>
+            <p>Votre cœur est entre de bonnes mains avec nos spécialistes en cardiologie, qui vous offrent des services
+                de pointe pour la santé de votre cœur.</p>
+        </div>
+        <div class="service">
+            <img src="istockphoto-kiné.jpg" alt="Kinésithérapie">
+            <h2>Kinésithérapie</h2>
+            <p>Notre équipe de kinésithérapeutes expérimentés vous accompagnera dans votre rétablissement physique, en
+                vous proposant des soins personnalisés pour retrouver mobilité et confort.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Centre Médico-Social La Grâce & Vie
+    </div>
+</body>
+
+</html>
